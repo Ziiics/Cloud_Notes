@@ -1,0 +1,13 @@
+AWS Pricing
+- Pay only for the service you need, cost optimization
+- No long term contracts or complex licensing
+- Has management tools to monitor cost ofr better planning
+- Priced independently and transparently based on-demand
+- Don't pay while it is not running
+- Has different pricing model, wither by hour or seconds, capacity reservation, spot instances, and savings plans
+
+AWS CAF (Cloud Adoption Framework)
+- Used to check cloud readiness for businesses
+- Set of best practices, guidance, and tools that helps organizations digitally transform and accelerate their cloud adoption
+- Provides a structured approach by organizing activities into six perspectives—business, people, governance, platform, security, and operations—to align cloud strategy with business goals
+- The framework is built around a four-phase cycle: Envision, Align, Launch, and Scale

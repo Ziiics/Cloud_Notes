@@ -1,0 +1,30 @@
+Amazon VPC (Virtual Private Cloud)
+- Logically isolated private cloud inside the whole AWS infrastructure
+- AWS account comes with default VPC based on AWS region
+- Can manually configure virtual network environement with IP address range, subnets, and gateway
+- Support IPv4 and IPv6, by default IPv4
+- All different subnet have to stay on one region, but couple VPN can be create throughout different region
+- Allow NACLs (Network Access Control Lists - firewall) and add multiple layer of advanced security features
+- Can also store S3 inside so that only instances inside VPN are able to access it
+
+Amazon VPC concept
+- When creating VPC, private IP address has to be assigned using CIDR block
+- Private IP address inside VPC wil not be reachable through the public, and are only used for private communication of your instances inside the VPC
+- Route can be local and not, each subnet has to ahve a route table
+
+Amazon VPC security
+- NACL is basically the firewall
+- There are default option and can be customized, by default wil denies all inbound and allow all outbound
+- Each subnet can only has one NACL
+- List will be checked from the top to bottom
+- Security group are stateful
+- Different tier include web tier, application tier, and data tier
+
+Enabling VPC Internet Connection
+- Attach internet gateway to VPC
+- Add subnet route to the table and add route to internet gateway
+- Add IPv4, IPv6 or elastic IP address (static IPv4 address)
+- To enable instances in a private subnet to able to reach out but for teh outside to not able to reach the instances, use NAT (Network Address Translation) gateway
+- Add NAT gateway to the route to direct traffic form internet to NAT gateway (doesn't support IPv6)
+- For IPv6, use Egress-only Internet gateway, allow traffic to go out but prevent inbound traffic
+  - Make sure to add it to the route table for IPv6 to go to Egress-only

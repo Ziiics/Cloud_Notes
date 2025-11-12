@@ -8,6 +8,7 @@ AWS Global Infrastructure Overview
 EC2 (Elastic Compute Cloud) Overview
 - Enables scale up, handle changes or spickes
 - Hosted in multiple region, SLA 99/99% availability for each Amazon EC2 region
+- Can access Amazon EFS across AZs, VPC, and regions
 
 EC2 Basics
 - Instances: virtual server, used to control the amount of CPU, Memory, GPU, storage, and network capacity needed

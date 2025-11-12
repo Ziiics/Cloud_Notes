@@ -23,3 +23,27 @@ SQL vs NoSQL Database
 
 DynamoDB Table Terms
 - 
+
+Amazon Relational Databse Service (RDS) Overview
+- Managed relational database service, resizable, helsp with montioring and patching
+- Can choose between the 6 below,
+  - Amazon Aurora
+  - PostgreSQL
+  - MySQL
+  - MongoDB
+  - Oracle
+  - SQL server
+- Migration is simple, can use AWS Database Migration Service
+- Easy to adminster, no need to do infrasturcture provisioning, installing, or maintainging
+- Available and durable, allow Multi-AZ DB instance that sync replicates to different AZ
+- It is secure and able to be isolated in the VPC
+
+RDS Features
+- Lower Administrative Burden
+- Can choose between 3 different instance class, general purpose, memory intensive, and burstable
+- Provide automatic software patching
+- Have 3 different storage types
+  - Gp2 (General purpose) storage that is based on SSD
+  - Magnetic storage - std storage, backward compatibility
+  - Provisioned IOPS (SSD) Storage -  consistent, upt o 40,000 IOPS per DB instances, optimised for I/O intensive
+- Has automatic backup of up to 35 days, also provide database snapshots

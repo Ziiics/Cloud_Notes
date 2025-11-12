@@ -1,0 +1,20 @@
+Amazon EFS (Elastic File System)
+- Manages file storage infrastructure
+- Help deploy, patch, and maintain file system
+- Work with NFS 4.0 and 4.1
+- Scale on demand to petabytes
+- Support massive rallel shared access to EC2 also
+- Regional services that keep data across multiple AZs
+- Can be accessed by ECs across different AZs, VPC, region
+- Can be access by on-premise server using AWS Direct Connection or AWS VPN
+
+Different option,
+- Amazom EFS - for Linux
+- Amazon FSX - for Windows app and Windows file server
+
+Amazon EFS Benefit
+- Enable access control to file system, secure access
+- Scalable for unpredictable demand
+- Can be up to 10 GB/ or >500,000 IOPS
+- Fully managed with simple interface using AWS Management Console
+- Encrypt data in rest and on transit, security compliance

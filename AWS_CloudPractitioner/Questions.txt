@@ -4,3 +4,4 @@
 - DynamoDB
 - JSON
 - DocumentDB (MongoBD)
+- MariaDB
