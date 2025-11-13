@@ -1,0 +1,9 @@
+Amazon CloudWatch Overview
+- Used to monitor logs, metrics, and events for developers and engineers
+- Used to optimize resources, data & insights, respond to performance changes, operational health
+- Provide unified view of AWS Resources, applications, AWS Services, and on-premises server
+- Detect anomalous behavior and set alarm that can be used to discover insight and troubleshooting
+
+Amazon CloudWatch benefit
+- Can also used with CloudWatch agent to watch hybrid cloud
+- Example as, can do EC2 autoscaling or even stop and run instances
