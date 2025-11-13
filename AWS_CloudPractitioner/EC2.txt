@@ -48,7 +48,7 @@ VPC (Virtual Private Cloud) - dedicated virtual network in AWS accound, the VPC 
 
 AWS System Manager Overview helps manage AWS resources securely. It provide functions as,
 - Operations Management - done from central location for issue recsolving and investigation
-- Change Managemnet - systems manager document that automate common tasks
+- Change Management - systems manager document that automate common tasks
 - Application Management - to manage the application and service metadata
 - Node Management - AWS Systems Manager Fleet Management used to streamlines management
 
@@ -57,3 +57,9 @@ AWS System manager use cases:
 - Implement best proactive and reactive processes
 - Remediate Security Issues - enhance security and the Compliance
 - Auto-resolve Issues - managge application and issues easily
+
+AWS Auto Scaling and Healing on AWS
+- Can be used to monitor apps and setup application scaling
+- Build scaling plans using Spot Fleets, ECS Tasks, or DynamoDB Index
+- Automatically health by using ELB Check Trigger by automatically shift the instances when something happen
+- when termination, Life Cycle Hooks that uses CloudWatch Events which invokes Lambda that trigger EC2 Systems Manager
