@@ -32,8 +32,8 @@ This Projectis my first cloud deployment. I used simple static HTML page and hos
 
 **Route53 is not free even for Free Tier member, so be careful and ensure that you are aware of the payment.**
 
-11. After transferring, follow the procedure and you should be getting auth code. It then take up to 10 days for your current domain name registrar to process the request.
-12. At this moment of waiting, I used AWS Certificate Manager to request a public certificate for HTTPS. Choose the domain and wwiat for the process.
+8. After transferring, follow the procedure and you should be getting auth code. It then take up to 10 days for your current domain name registrar to process the request.
+9. At this moment of waiting, I used AWS Certificate Manager to request a public certificate for HTTPS. Choose the domain and wwiat for the process.
 
 ### Current To-Do
 - [ ] Wait for Route 53 DNS transfer to finish
