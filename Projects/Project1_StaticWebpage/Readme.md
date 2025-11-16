@@ -21,17 +21,8 @@ This Projectis my first cloud deployment. I used simple static HTML page and hos
 3. Added JSON bucket policy -*can be based on user permission, HTTPS or HTTP, global keys or enterprise keys, which part of the bucket is allowed, requiring MFA or not*- to control how the site can be accessed.
 4. Upload files to the bucket and tested the S3 website endpoint to ensure the corerct filei is accessible.
 5. Set up CloudFront -*Free up to 1TB if using Free Tier*-, chose my S3 website endpoint as the origin. Website-endpoint is recommend this time because it is a static webpage.
-
-*p.s. For this project, I won't use WAF (Web Application Firewall), but in real life it is very recommended.*
-
 6. Waited for the CloudFront distribution to finish deploying, then tested the CloudFront URL.
-
-*p.s. About to be done with just using S3 and CloudWatch, but the challenge seems to also be using Route 53 and HTTPS*
-
 7. Started the Route 53 setup to connect my own domain (I transferred the domain I already owned).
-
-**Route53 is not free even for Free Tier member, so be careful and ensure that you are aware of the payment.**
-
 8. After transferring, follow the procedure and you should be getting auth code. It then take up to 10 days for your current domain name registrar to process the request.
 9. At this moment of waiting, I used AWS Certificate Manager to request a public certificate for HTTPS. Choose the domain and wwiat for the process.
 
@@ -45,7 +36,7 @@ This Projectis my first cloud deployment. I used simple static HTML page and hos
 - CloudFront caches old files — if I update my HTML, I need to invalidate the cache.
 - The S3 “website endpoint” is good for testing before adding CloudFront.
 - Route 53 is not free, even if you’re using Free Tier — something to keep in mind.
-- In production, S3 buckets should be private and accessed through CloudFront (using OAC), but for learning, public access is fine.
+- In production, S3 buckets should be private and accessed through CloudFront (using OAC), but for learning, public access is fine. I also won't use WAF (Web Application Firewall), but in real life, it is very recommended.
 - To check the static webpage through S3 webpage, go to the project's bucket, then go to **Properties tab**. Scroll all the way to the bottom and you will see **Bucket Website Endpoint**. Copy it and paste it to webpage.
 
 ### Bucket Policy I Used
