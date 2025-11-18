@@ -1,4 +1,7 @@
-### Cloud computing is the delivery of IT resources (servers, storage, databases, AI/ML tools, networking) over the internet with pay-as-you-go pricing.
+# 1. Introduction to Cloud
+
+### Cloud computing 
+Cloud Computing is the delivery of IT resources (servers, storage, databases, AI/ML tools, networking) over the internet with pay-as-you-go pricing.
 - Removes the need to buy hardware
 - Lets users rent resources only when needed (computing power, storage, server, databases, AI, ML tools, etc)
 - Allows quick access to resources within seconds
@@ -12,6 +15,8 @@
 - AWS resources exist across many Regions and Availability Zones worldwide.
 - This design provides redundancy, so if one area has an outage, another automatically takes over.
 - This supports fault tolerance, high availability, and disaster recovery.
+
+# 2. Compute in the Cloud
 
 ### Amazon EC2 and AMI (Amazon Machine Image)
 
@@ -65,3 +70,55 @@ AWS messaging services:
 Monolithic apps = tightly connected; one failure affects the whole app.
 
 Microservices = loosely connected; each component runs independently and failures are isolated.
+
+
+# 3. Exploring Compute Services
+
+### AWS Lambda
+AWS Lambda is a serverless compute services, where you only run code without managing servers. This model is called Function as a Service (FaaS).
+- Great for quick, event-driven process.
+- Supports any programming language, as Java, Python, and Node.js.
+- Integrates with other AWS services quite easily (S3, DynamoDB, EventBridge).
+- Handles execution, scaling, and resources allocation.
+
+How Lambda Works
+1. upload code to Lambda (called Lambda function).
+2. Set code to trigger form an event source.
+3. Run code when triggered (reliable, secure, and efficient).
+4. Pay only for the compute time used.
+
+Example of use
+- Real-time image processing for a social media applciation.
+- Personalized content delivery for a news aggregator.
+- Real-time even handling for an online game.
+
+### Containers and Orchestration
+
+Containers package code + dependencies into a portable, consistent environment that runs anywhere (like lightweight VMs).
+
+Orchestration platforms handle:
+- Starting/stopping containers.
+- Scaling across multiple servers.
+- Updating, monitoring, and maintaining container clusters.
+
+AWS Container Options
+- Amazon ECS (Elastic Container Service) - simpler, AWS-native orchestration; easier setup.
+- Amazon EKS (Elastic Kubernetes Service) - uses Kubernetes (industry standard, open-source). Good for teams already using Kubernetes.
+
+Orchestration get the containers from Amazon ECR (Elastic Container Registry) to stores the container images.
+
+Fargate - serverless, AWS manages the servers, no need to manage servers or EC2 instances.
+
+### Additional computer services
+
+#### Elastic Beanstalk 
+Fully managed service that streamlines deployment, management, and scaling of web apps. Good for RESTful APIs, mobile backend services, microservices architectures with automated scaling and simplified infrastructure management.
+
+#### AWS Batch
+Fully managed service to run batch computing workloads. Automate schedules, process large-scale, parallel workloads in areas like scientific computing, financial task analysis, media transcoding, big data processing, ML training, and genomics research.
+
+#### Lightsail
+Offer VPS (Virtual Private Serves) at a predictable monthly pricing. Ideal for small businesses, basic workloads. 
+
+#### Outposts
+Fully managed hybrid cloud solution. Good for low-latency apps, data pricessing in remote locations, migrating and modernizing legacy apps, and meeting regulatory compliance or data residency requirements.
