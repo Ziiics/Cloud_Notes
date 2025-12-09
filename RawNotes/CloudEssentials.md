@@ -132,7 +132,7 @@ Things to consider when going global are which region to select and which AWS ed
 
 CloudFront uses Edge locations and is a part of the Amazon Global Edge Network. It is a CDN and caching system.
 
-AWS CloudFormation is an IaC Infrastructure as Code) that can be used to define AWS Resources with text-based documents called CloudFormation templates. You can specify details on how exactly you want it to be built.
+AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define AWS Resources with text-based documents called CloudFormation templates. You can specify details on how exactly you want it to be built.
   
 # 5. Networking
 
@@ -143,3 +143,72 @@ Tow other foundational networking components in AWS Cloud
 
 To enter to VPC, we must attach internet gateway. 
 AWS Direct Connect can also be used to esatablish priavte, dedicated fiber connection form data center to AWS. 
+
+Different ways to conntect to AWS Cloud
+- AWS Client VPN - advanced authemtication, remote accessm elastic and fully managed, all managed by AWS.
+- AWS Site-to-Site VPN - creates secure and private corrention between sites.
+- AWS Private Link - not need gateeway, NAT, or anything. Uses VPC as controller to control connected API endpoints, sites, services, and resources. traffic jam is possible.
+- AWS Direct Connect - uses dedicated private connection between network and VPC. It bypass the internet and reliable for massive data transfer.
+- Additional gateway,
+  - AWS Transit Gateway - connect to VPC and on-premises networks through a central hub.
+  - NAT Gateway - connect instance in private subnet to outside
+  - Amazon API Gateway - uses API (Application Programming Interface).
+  - Virtual Privaete Gateway - to connectprivate subnet in VPC to data center.
+
+NACL and Security Group (all is user responsibility)
+- Network ACL - control traffic at the subnet level. Stateless so it will check all traffic without remembering its state.
+- Security groups - control traffic at resource level. Deny all traffic by default unless stated otherwise. Stateful and will remember previous decisions for incoming packets. Fine grained.
+
+Other Resources
+- Amaon Route53 - DNS that translate website name to IP address
+- Amazon CloudFront - CDN (Content Delivery Network)
+- AWS Global Accelerator - uses intelligent traffic routing and fast failover. Example use cases include global gaming company and financial services applications.
+
+# 6. Storage
+
+Different type of storage,
+- Block Storage - persistent, low-latency attached to EC2 instances llike physical hard drives. Deivid data into block. Can be encrypted, backed up, and modified while in use. Two primary block storage services:
+  - Amazon EC2 instance store - unmanaged non-persistent, high performance attached directly to EC2 instances for temporary data since all data will be deleted when the instance stop.
+  - Amazon Elastic Block Store (EBS) - managed and persistances in EC2 intances. 
+    - Ensure data protection through auto repliation within the same AZ. 
+    - Do backups by using snapshots, means that it only backup the chnages that happen.
+- Object Storage - Keep data (called metadata) as object with its unique ID. To change part of data, you have to change the whole image, good for data that don't constantly change. Exmaple service include S3 (Simpler Storage Services)
+- File Storage - shared file systems accessible over the network, can be accessed simultaneously. Two primary file storage services:
+  - EFS (Elastic File System) - fully managed, scalable NFS file system
+  - FSx - managed file storage for popular file systems like Windows, Lustre, and NetApp ONTAP.
+- Additional storage services
+  - AWS Storage Gateway - fully managed, hybrid, unlimited cloud storage.
+  - AWS Elastic Disaster Recovery - streamlines the recovery to your physical, virtual, and cloud-based servers into AWS.
+
+AWS Shared responsiblity
+- Fully managed - customer responsible for customer data and client-side data encryption only.
+- Managed services - additional of server-side encryptiona nd network traffic protection also becomes customer responsibility.
+- Unmanaged services - The responsibility of manaaged service plys platform and pps management, OS, netowrk, and firewall configuration.
+
+Amazon Data Lifecycle Manager - to define policies to help automate snapshot lifecucle amnagement. The steps are,
+1. Create an EBS snapshots policy
+2. Elect target resource types (can either be ENS volume or EC2 instance)
+3. Exclude volume, narrow down the data to be included in the snapshots
+4. Set custom schedules
+5. Apply additional actions, as tags or corr-account sharing, etc.
+
+S3 - Object Storage that can store unlimited amounts fo data in AWS Cloud.
+- Have 11 9's percent durability
+- Features versioning, lifecycle management, various storage classes.
+- S3 bucket is kept as S3 object.
+- Unlimited storage, everything is private by default.
+
+S3 Storage Classes
+- S3 Standard - for general purpose, quixk retrieval for data accessed regularly, like dynamic websites.
+- S3 Intelligent-Tiering - useful when data has unknow or changing access patterns. Have frequent access tier, infrequent, and archive instanct access tier. Data will ne moved to the most cost-effective storage tier.
+- S3 Standard Infrequent Access (Standard IA) - access less frequently but require rapid access. Ideal for long-term backups, disaster recovery files.
+- S3 Express One Zone - store data in a single AZ to deliver consistent single-digit milisecond data. Cost 80% less than S3 Standard.
+- S3 Glacier Instant Retrieval - for data rarelyl accessed and requires milisecond retrieval.
+- S3 Glacier Flexible Retrieval - for adat accessed 1-2 tiems per yeat, can be minutes to hours
+- S3 Glacier Deep Archive - lowest cost, for long-term retention and default retrieval is 12 hours, retain data for 7-10 years or longer.
+- S3 Outposts - deliver object storage to on-premises using Amazon S3 APIs and features.
+
+S3 Lifecycle configurations:
+- Transition actions: define when objects should transition to another storage class
+- Expiration actions: define when objects expire and should be permanently deleted.
+  
