@@ -111,17 +111,14 @@ Fargate - serverless, AWS manages the servers, no need to manage servers or EC2 
 
 ### Additional computer services
 
-#### Elastic Beanstalk 
-Fully managed service that streamlines deployment, management, and scaling of web apps. Good for RESTful APIs, mobile backend services, microservices architectures with automated scaling and simplified infrastructure management.
-
-#### AWS Batch
-Fully managed service to run batch computing workloads. Automate schedules, process large-scale, parallel workloads in areas like scientific computing, financial task analysis, media transcoding, big data processing, ML training, and genomics research.
-
-#### Lightsail
-Offer VPS (Virtual Private Servers) at a predictable monthly price. Ideal for small businesses, basic workloads. 
-
-#### Outposts
-Fully managed hybrid cloud solution. Good for low-latency apps, data processing in remote locations, migrating and modernizing legacy apps, and meeting regulatory compliance or data residency requirements.
+- Elastic Beanstalk 
+    Fully managed service that streamlines deployment, management, and scaling of web apps. Good for RESTful APIs, mobile backend services, microservices architectures with automated scaling and simplified infrastructure management.
+- AWS Batch
+    Fully managed service to run batch computing workloads. Automate schedules, process large-scale, parallel workloads in areas like scientific computing, financial task analysis, media transcoding, big data processing, ML training, and genomics research.
+- Lightsail
+    Offer VPS (Virtual Private Servers) at a predictable monthly price. Ideal for small businesses, basic workloads. 
+- Outposts
+    Fully managed hybrid cloud solution. Good for low-latency apps, data processing in remote locations, migrating and modernizing legacy apps, and meeting regulatory compliance or data residency requirements.
 
 ---
 ---
