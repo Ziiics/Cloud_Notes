@@ -233,4 +233,31 @@ AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define
 ---
 ---
 
-# 7. 
+# 7. Databases
+
+### Amazon RDS (Relational Database)
+- Relational Databases uses structured query language, SQL. 
+  - Offer Multi-AZ deployment and automated backups, can also uses BD snapshots for manual.
+  - Provide network isolation, encryption in transit, and encryption at rest.
+  - Support engines as MySQL, PostgreSQL, MariaDB, Oracle, and SQL Server.
+- Aurora 
+  - AWS-managed relational database compatible with MySQL and PostgreSQL
+  - Auto-scales to handle high workloads
+  - Replicates data across multiple AZs for high availability
+  - Delivers high performance with lower operational overhead
+
+### NoSQL Databases
+Non-relational database that uses Key-Value pairs, documents, or wide-column format.
+- DynamoDB - fully managed NoSQL, incredibly fast, ideal for high performance and seamless scaling apps.
+
+### In-memory Caches
+ElastiCache is a fully managed in-memory caching service.
+- Fully managed in-memory cache service (supports Redis and Memcached)
+- Speeds up application performance by reducing load on databases
+- Automatically detects and replaces failed nodes
+- Ideal for session caching, leaderboards, real-time analytics
+
+### Additional Databse services
+- DocumentDB - handle semistructured data where information doesn't conform to rigid relational schemas. Compatible with MongoDB.
+- AWS Backup - streamlines data protection across various AWS resources and on-premises deployment in single dashboard.
+- Neptune - fully managed, urpose-built graph database to manage highly connected data sets.
