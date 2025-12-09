@@ -228,3 +228,9 @@ AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define
 3. Exclude volume, narrow down the data to be included in the snapshots
 4. Set custom schedules
 5. Apply additional actions, as tags or corr-account sharing, etc.
+
+---
+---
+---
+
+# 7. 
