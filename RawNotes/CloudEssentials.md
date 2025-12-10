@@ -229,9 +229,7 @@ AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define
 4. Set custom schedules
 5. Apply additional actions, as tags or corr-account sharing, etc.
 
----
----
----
+
 
 # 7. Databases
 
@@ -261,3 +259,38 @@ ElastiCache is a fully managed in-memory caching service.
 - DocumentDB - handle semistructured data where information doesn't conform to rigid relational schemas. Compatible with MongoDB.
 - AWS Backup - streamlines data protection across various AWS resources and on-premises deployment in single dashboard.
 - Neptune - fully managed, urpose-built graph database to manage highly connected data sets.
+
+
+---
+---
+---
+
+# 8. AI ML and Data Analytics
+
+AI and Machine Learning
+- AI (Artificial Intelligence) - focused on development of intelligetn computer systems capable of performing humanlike tasks.
+- ML (Machine Learning) - type of AI for training machines to perform complex tasks without explicit instructions.
+
+AWS AI/ML tiers solution
+- AI services - pre-built models trained for specifc functions. Some examples include:
+  - For language services:
+    - Amazon Comprehend (interpret document text to a menaingful one)
+    - Amazon Polly (convert text to lifelike speech)
+    - Amazon Transcribe (convert speech into text)
+    - Amazon Translate (text translation service)
+  - For computer vision and search services:
+    - Amazon Kendra (search answer within large amount of neterprise content)
+    - Amazon Rekognition (video analysis service)
+    - Amazon Textract (extracts typed and handwritten text)
+  - Conversational AI and personalization services
+    - Amazon Lex (add voice and text conversational to apps)
+    - Amazon Personalize (use historical data to personalized recommendation)
+- ML services - customized approach with Amazon SageMaker AI where you build, train, and deploy your own ML model.
+  - Amazon SageMaker AI: can be done wiht IDE or no-code interfacem fully managed infrastructure, and repeatable ML workflows
+- ML frameworks and infrastructure - completely custom approach to building models using purpose-built chips
+  - ML framework is software librarry or tool that provides experienced ML practitioners with pre-built
+  - AWS ML infrastructure uses ML-optimized EC2, EMR, and ECS to support these solution.
+
+Deep Learning - a subset of ML where modelsa re trained using layers of artificial neurons that mimic the human brain. 
+Generative AI - deep learning powered by large ML known as foundation models (FMs). LLMs are a popular type of FM traied to use human language.
+
