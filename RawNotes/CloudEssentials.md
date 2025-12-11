@@ -18,6 +18,10 @@ Cloud Computing is the delivery of IT resources (servers, storage, databases, AI
 
 
 
+
+
+
+
 # 2. Compute in the Cloud
 
 ### Amazon EC2 and AMI (Amazon Machine Image)
@@ -75,6 +79,10 @@ Microservices = loosely connected; each component runs independently and failure
 
 
 
+
+
+
+
 # 3. Exploring Compute Services
 
 ### AWS Lambda
@@ -125,6 +133,10 @@ Fargate - serverless, AWS manages the servers, no need to manage servers or EC2 
 
 
 
+
+
+
+
 # 4. Going Global
 
 When expanding globally, the main considerations are Region selection, edge locations, and how AWS maintains consistency across locations.
@@ -138,6 +150,10 @@ CloudFront is a part of the Amazon Global Edge Network (CDN). It uses Edge Locat
 ### CloudFromation
 AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define AWS Resources with text-based documents called CloudFormation templates. You can specify details on how exactly you want it to be built, maintaining consistent deployment.
   
+
+
+
+
 
 
 # 5. Networking
@@ -167,6 +183,10 @@ AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define
 - Amaon Route53 - DNS that translate website name to IP address
 - Amazon CloudFront - CDN (Content Delivery Network)
 - AWS Global Accelerator - uses intelligent traffic routing and fast failover. Example use cases include global gaming company and financial services applications.
+
+
+
+
 
 
 
@@ -231,6 +251,10 @@ AWS CloudFormation is an IaC (Infrastructure as Code) that can be used to define
 
 
 
+
+
+
+
 # 7. Databases
 
 ### Amazon RDS (Relational Database)
@@ -261,9 +285,12 @@ ElastiCache is a fully managed in-memory caching service.
 - Neptune - fully managed, urpose-built graph database to manage highly connected data sets.
 
 
----
----
----
+
+
+
+
+
+
 
 # 8. AI ML and Data Analytics
 
@@ -272,30 +299,33 @@ ElastiCache is a fully managed in-memory caching service.
 - ML (Machine Learning) - type of AI for training machines to perform complex tasks without explicit instructions.
 
 ### AWS AI/ML tiers solution
-1. AI services - pre-built models trained for specifc functions. Some examples include:
-  - For language services:
+
+#### 1. AI services - pre-built models trained for specifc functions. Some examples include:
+    For language services:
     - Amazon Comprehend (interpret document text to a menaingful one)
     - Amazon Polly (convert text to lifelike speech)
     - Amazon Transcribe (convert speech into text)
     - Amazon Translate (text translation service)
-  - For computer vision and search services:
+    For computer vision and search services:
     - Amazon Kendra (search answer within large amount of neterprise content)
     - Amazon Rekognition (video analysis service)
     - Amazon Textract (extracts typed and handwritten text)
-  - Conversational AI and personalization services
+    Conversational AI and personalization services
     - Amazon Lex (add voice and text conversational to apps)
     - Amazon Personalize (use historical data to personalized recommendation)
-2. ML services - customized approach with Amazon SageMaker AI where you build, train, and deploy your own ML model.
-  - Amazon SageMaker AI: can be done wiht IDE or no-code interfacem fully managed infrastructure, and repeatable ML workflows
-3. ML frameworks and infrastructure - completely custom approach to building models using purpose-built chips
-  - ML framework is software librarry or tool that provides experienced ML practitioners with pre-built
-  - AWS ML infrastructure uses ML-optimized EC2, EMR, and ECS to support these solution.
+
+#### 2. ML services - customized approach with Amazon SageMaker AI where you build, train, and deploy your own ML model.
+
+- Amazon SageMaker AI: can be done wiht IDE or no-code interfacem fully managed infrastructure, and repeatable ML workflows
+
+#### 3. ML frameworks and infrastructure - completely custom approach to building models using purpose-built chips
+- ML framework is software librarry or tool that provides experienced ML practitioners with pre-built
+- AWS ML infrastructure uses ML-optimized EC2, EMR, and ECS to support these solution.
 
 ### Deep Learning and Generative AI
 
-Deep Learning - a subset of ML where modelsa re trained using layers of artificial neurons that mimic the human brain. 
-
-Generative AI - deep learning powered by large ML known as foundation models (FMs). LLMs are a popular type of FM traied to use human language.
+- Deep Learning - a subset of ML where modelsa re trained using layers of artificial neurons that mimic the human brain. 
+- Generative AI - deep learning powered by large ML known as foundation models (FMs). LLMs are a popular type of FM traied to use human language.
   - Amazon SageMaker JumpStart - ML hub with FMs and pre-built ML solutiotns deployable with a few clicks. Used for Rapid ML model deployment, custom fine-tuned solutions, ML experiments and prototypes.
   - Amazon Bedrock - fully managed service for adapting and deploying FMs. Used for Enterprise-grade generative AI, multimodel content generation, and advanced conversational AI.
   - Amazon Q - interactive AI assisstant that can be integrated with company's repositories. Hae for Business and Developer.
@@ -304,61 +334,61 @@ Generative AI - deep learning powered by large ML known as foundation models (FM
 Tranformation of raw data to uncover valuable insights and trends.
 
 #### Data apipelines for ETL (eExtract, Transform, Load) process:
-1. Store the data.
-    Some Data Storage services include,
-    - Amazon S3 - popular choice for data lakes. Can securely house virtually any amount of structured or unstructured data.
+1. Store the data. Some Data Storage services include,
+    - Amazon S3 - popular choice for data lakes. Securely house virtually unlimited structured or unstructured data.
     - Amazon Redshift - fully managed data warehouse service that store petabytes of structured and semistructured data.
-2. Extract from various sources or Data ingestion.
-    Some Data ingestion services,
+2. Extract from various sources or Data ingestion. Some Data ingestion services,
     - Amazon Kinesis Data Streams - for real-time ingestion of terabytes of data.
     - Amazon Data Firehouse - near real-time, fully managed service provide auto provisioning and scaling.
-3. Transform into consistent, usable format for downstream tools.
-    Data processing services,
+3. Transform into consistent, usable format for downstream tools. Data processing services,
     - AWS Glue - fully managed, simple, fast, and cost effective.
     - Amazon EMR - ideal for large-scale data processing and organizastions, auto infrastructure provisioning, cluster management, scaling. Supports Apache Spark, Apache Hadoop, and Apache Hive.
-4. Load into destination system, like data warehouse or analytics platform
-    Data cataloging services
+4. Load into destination system, like data warehouse or analytics platform. Data cataloging services,
     - AWS Glue Data Catalog - centralized, scalable, and managed metadata repository that enhances data discovery. 
-5. Getting the analyzed data.
-    Ddata analysis and visualizastion services
+5. Getting the analyzed data. Data analysis and visualization services,
     - Amazon Athena - run SQL queries to analyze data in relational, nonrelational, object, and custom data sources.
     - Amazon Redshift - fully managed data warehouse solution. have massively parallel processing architecture and columnar storage.
     - Amazon QuickSight - can be used for both technical and non-technical users.
-    - Amazon OpenSearch Service - search for relevant contentn throguh precise keyword matching or natural lanuage queries.
+    - Amazon OpenSearch Service - search for relevant content throguh precise keyword matching or natural language queries.
+
+
+
+
+
 
 
 
 # 9. Security
 
-Authentication and Authorization
-- Authentication: verifying the identity of user or entity through credentials
+### Authentication and Authorization
+- Authentication - verifying the identity of user or entity through credentials
 - Authorization - grants user certain access rights and permissions.
 
 AWS Shared Responsibility Model 
 - Customer is responsible to security in the AWS services and cloud.
-  - AWS provided security mechanism: prevent, Protect, and Detect and respond.
-- AWS is responsible of the security of the cloud itseld.
+  - AWS provided security mechanism: Prevent, Protect, and Detect and respond.
+- AWS is responsible of the security of the cloud itself.
 
-AWS IAM, Secrets Manager, and Systems Manager
-- IAM (Identity and Access Management) 
+### AWS IAM, Secrets Manager, and Systems Manager
+IAM (Identity and Access Management) 
   - By default, All actions are denied. Must explicitly grant permission.
   - Permission can be grant by groups, users, or roles. 
   - IAM Identity Center is specifically designed to help organizations implement single sign-on for AWS resources using their existing identity providers.
-- Secret Manager
+Secret Manager
   - Managed, rotate, and retrieve credentials, API keys, and other secrets.
-- Systems Manager
+Systems Manager
   - Provide centralized view across organizastion's accounts and Regions and multi-cloud and hybrid environment.
 
 AWS protection through services
 - AWS Shield Standard - auto protect AWS customers from most commmon DDoS attacks at no cost.
 - AWS WAF - web apps firewall that monitors network requests that come into web apps.
 
-To proterct data, AWS uses
+To protect data, AWS uses
 - AWS Key Management Service (AWS KMS) - create and manage cryptographic keys to encryp and decrypt data
 - Amazon Macie - monitor sensitive daat at rest to make sure it's safe
 - AWS Certificate Manager (ACM) - centralizes managermenmt of SSL/TLS certificates that provide data encryption in transit.
 
-Detection and response services
+### Detection and response services
 - Amazon Inspector - imporvde security and compliance of applications by running auto security assessmsent for EC2 instances, containers, and Lmabda functions.
 - Amazon GuardDuty - provides intellident threat detection across all infrastructure and resources.
 - Amazon Detective - to further investigae the root cause of threat that has been detected.
@@ -366,9 +396,15 @@ Detection and response services
 
 
 
-# 10. Monirotoing, Compliance, and Governance in AWS Cloud
 
-The progression to effectively monitor AWS Cloud solutions are,
+
+
+
+
+
+# 10. Monitoring, Compliance, and Governance in AWS Cloud
+
+### The progression to effectively monitor AWS Cloud solutions are,
 1. Securing systems - to protect data, sysgtems, and infrastructure from unauthorized access.
 2. Monitoring activities - continuously observe and analyze system activity, network traffic, and security events.
    - Amazon CloudWatch can be used to monitors AWS reousrces and the applications you run on AWS in real time. The features include metrics, alarms, dashboards, and logs.
@@ -378,22 +414,18 @@ The progression to effectively monitor AWS Cloud solutions are,
    - AWS Artifact - provides no-cost, on-demand access to AWS security and compliance reports and select online agreements.
    - AWS Compliance portal can also be used to see how other cusotomer solved various compliance, governance,a nd audit challenges.
 
-Following guidelines for different AWS resources
+### Following guidelines for different AWS resources
 - AWS Config - assess, audit, and evaluate configurations of AWS resources, can create reports.
 - AWS Audit Manager - continually audits AWS usage to simplify risk and compliance assessment.
-
-AWS Organizations - centrally manage and govern environemnt as AWS resources grow and scale. Can be used to automate AWS acount create, providing tools and accesss, and controlling user access. Can control based on OU and individual member account.
-
-Governance in AWS Cloud
+- AWS Organizations - centrally manage and govern environemnt as AWS resources grow and scale. Can be used to automate AWS acount create, providing tools and accesss, and controlling user access. Can control based on OU and individual member account.
 - AWS Cloud Tower - use preconfigured controls to enforce and manage governance rules for seucirty, operations, and compliance at scale. Used to quickly deplou apps and provision compliant AWS accounts.
 - AWS Service Catalog - create, share, and organize from a curated caatlog of AWS resources. Used to provision resources across AWS accounts, apply access controls,and accelerate provisioning of CI/CD pipelines.
 - AWS License Manager - helps manage software license and fine-tune licensing costs. Use it to streamlin license management and simplogy experience, automate the distributiona nd activation of software entitlements across AWS accounts.
 
-AWS Health Dashboard - view account-specific health information and get AWS Health event updates. It gives you timely and actionable guidance to remedy issues. It also helps manage service health and is integrated and automated to use at scale.
-
-AWS Trusted Advisor helps you align with AWS best practices, prioritize recommendations, and optimize your AWS resources at scale. Can continuously evaluate your AWS environment by using best practice checks across several categories.
-
-AWS IAM Access Analyzer provides benefits like refining permissions, validating IAM policies, helping you meet your least privilege goals, and automating IAM policy reviews.
+### Operational Health & Best Practices
+- AWS Health Dashboard - view account-specific health information and get AWS Health event updates. It gives you timely and actionable guidance to remedy issues. It also helps manage service health and is integrated and automated to use at scale.
+- AWS Trusted Advisor helps you align with AWS best practices, prioritize recommendations, and optimize your AWS resources at scale. Can continuously evaluate your AWS environment by using best practice checks across several categories.
+- AWS IAM Access Analyzer provides benefits like refining permissions, validating IAM policies, helping you meet your least privilege goals, and automating IAM policy reviews.
 
 
 
