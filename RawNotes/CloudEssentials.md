@@ -429,7 +429,60 @@ To protect data, AWS uses
 
 
 
+
+
+
+
+
+
 # 11. Pricing and Support
+
+### Different pricing concept
+- Pay as you go - adapt to changing business needs and reduce the risk of changes.
+- Save when you commit - offer savings when commit to a 1-year ot 3-year plan.
+- Pay less by using more - the more you use, the less you pay
+
+Driving factors of cost include the computer power, storage, and data transfer amount.
+
+### AWS pricing and billing services and tools
+
+1. AWS Organizations 
+   - centralized management of AWS environments,
+   - Can create, group, and manage accounts, apply security policies,
+   - Consolidate billing with multiple account using single payment method.
+2. AWS Billing and Cost Management Dashboard
+   - Centralizes cost management, show current charges, usage, forecastsm and detailed breakdown,
+   - Help visualize spending
+3. AWS Budgets
+   - Custom budgets and sends alerts when Savings Plans and Reserved Instances (RIs) utilization exceed.
+4. AWS Cost Explorer
+   - Analyze historical spending trends wiht interactive graph
+   - Forecast future AWS costs based on current usage
+5. AWS Pricing Calculator
+   - web-based planning tool for estimation on prices
+   - useful to compare costs
+
+### Different Support Plans
+| Support Type | Details | Included checks | Technical Account Management (TAM) |
+| --- | --- | --- | --- |
+| Basic Support | Included already (access to documentation is a support too) | only Core AWS Trusted Advisor | not included |
+| Developer Support | Response time is 12-24 hours | only Core AWS Trusted Advisor | not included |
+| Business Support | For minimum production, 1-4 hours response time | Full set | not included |
+| Enterprise On-Ramp Support | For minimum production and critical, 1-4 hours response time, 30-mins when business-critical system is down | Full set | A pool to provide proactive guidance |
+| Enterprise Support | For minimum production and critical, 1-4 hours response time, 15-mins when business-critical system is down | Full set and prioritized | Designated TAM for consultative architectural and opreational guidance |
+
+### AWS Marketplace and Partner Network 
+
+Solutions and services offered in AWS Marketplace include,
+- SaaS (Software as a service) - for business apps, marketing tools, and collaboration tools.
+- ML and AI - prebuilt models for image recognition, ML algorithm.
+- Data and Analytics - business intelligence platforms for visualization and reporting.
+
+AWS Partner Nework (APN) - global community that uses AWS tech, programs, and tools to build solutions and services for customer. The benefit of becoming one are: funding, AWS Partner events, training and certifications.
+
+
+
+
 
 
 
