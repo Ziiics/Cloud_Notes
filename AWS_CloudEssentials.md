@@ -513,7 +513,6 @@ AWS Rpofessional Services team created AWS CAF (Cloud Adoption Framework) to hel
 7. Retire - remove uneeded applications
 
 ### Migrating Database
-
 - Homogeneous migration - migrating data from and to the same database engine.
 - Heterogeneous migration - transfering to different engine.
 
