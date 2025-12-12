@@ -532,4 +532,39 @@ Transferring data can be done online or offline.
 
 
 
+
+
+
+
+
 # 13. Well-Architected Solutions
+AWS Well-Architected Framework is used to evaluate the quality of your cloud designs.
+
+### AWS Specialized Service:
+
+For development services
+- AWS CodeBuild - fully managed continuous integration service that complies source code, run test, and produces software packages for delpoyment.
+- AWS CodePipeline - helps automate and release the CI/CD (Continuous Integration and Continuous Delivery) pipelines.
+- AWS X-Ray - to trace, debug, and perform analysis tools to visualize apps behavior.
+- AWS AppSync - streamlines building GraphQL APIs used in web and mobile development.
+- AWS Amplify - used to develop, deploy, and manage applications on AWS.
+
+For business application services:
+- Amazon Connect - AI- powered, cloud-based to setup customer service operations.
+- Amazon Simple Email Service (SES) - as email
+
+For End User:
+- Amazon AppStream 2.0 - stream desktop apps to users on any device.
+- Amazon WorkSpaces - fully managed cloud-based desktop computing service.
+- Amazon WorkSpaces Secure Browser - Amazon WorkSpaces website style.
+
+For IoT services:
+- AWS IoT Core - managed cloud service to securely conenct physical devices with cloud apaps. Include Smart security cameras, Smart pet feeders, and Smart irrigation systems.
+
+### Well-Architected Framework pillars
+- Operational Excellence - focus on operations, monitoring, automation, and continuous imporvement.
+- Security - protects systems and data through best practices like least privilege and data integrity. 
+- Reliability - emphasized recovery planning and system adaptability to meet changing demands.
+- Performance Efficiency - Encourages using the right resources for the job and adjusting as needs evolve.
+- Cost Optimization - helps control and reduce costs throguh smart provisioning and resource management.
+- Sustainability - promotes energy-efficient design and environmentally conscious resource usage.
