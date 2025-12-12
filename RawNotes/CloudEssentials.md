@@ -490,4 +490,46 @@ AWS Partner Nework (APN) - global community that uses AWS tech, programs, and to
 
 # 12. Migrating to the AWS Cloud
 
+### Phases of migration process
+1. Assess - assess organization readiness to opreate in cloud. Tools: Migration Evaluator
+2. Mobilize - create migration plan and address gaps. Tools: 
+   - AWS Application Discovery Service - gathers config, performance, and connection details of both servers and database on-premises to create detailed migration plan.
+   - AWS Migration Hub - centralized hub to assess, plan, implmeent, and track migration.
+3. Migrate and modernize - get things moving. Tools:
+   - For Migration: 
+     - AWS Application Migration Service - migrate and improve on-premises and cloud-based applications.
+     - AWS Database Migration Service - to migrate database.
+   - For Data Transfer: AWS DataSync, AWS Transfer Family, AWS Snow Family.
 
+AWS Rpofessional Services team created AWS CAF (Cloud Adoption Framework) to help migration. The six focused areas to consider when migration include: the business, people, governance, platform, security, and operations.
+
+### Seven Migration  (also called 7 Rs)
+1. Relocate - change hosting location to cloud
+2. Rehost - moving application without changes
+3. Replatform - make cloud optimization
+4. Refactor - reimagining, add features, scale, and improve
+5. Repurchase - moving from tranditional license to SaaS model
+6. Retain - keeping apps in the source environment
+7. Retire - remove uneeded applications
+
+### Migrating Database
+
+- Homogeneous migration - migrating data from and to the same database engine.
+- Heterogeneous migration - transfering to different engine.
+
+AWS Services that helps with migration:
+- AWS DMS (Database Migration Service) - virtual machine that runs replication software. Supports both homogenous and heterogeneous migrations.
+- AWS SCT (Schema Conversion Tool) - able to coonvert source database schema and code into oen that compatible with target database.
+
+Transferring data can be done online or offline. 
+1. Online Data Trasnfer
+   - AWS DataSync - automate data transfer, useful when archiving cold data and managing hybrid data workflows.
+   - AWS Transfer Family - fully managed support for secure file transfer over FTP, SFTP, and FTPS, etc
+   - AWS Direct Connect - establish dedicated private connection between your network to VPC for data transfer.
+2. Offline Data Transfer
+   - AWS Snowball Edge Storage Optimized devices - deliver high performance NYMe storage.
+
+
+
+
+# 13. Well-Architected Solutions
